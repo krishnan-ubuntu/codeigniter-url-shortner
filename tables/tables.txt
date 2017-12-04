@@ -1,0 +1,13 @@
+# ==================================================
+# All the tables
+# ==================================================
+
+
+create table url_index (
+id INT NOT NULL AUTO_INCREMENT,
+actual_url text NOT NULL,
+url_code text NOT NULL,
+created_date datetime NOT NULL, 
+PRIMARY KEY (id)
+);
+
