@@ -13,6 +13,7 @@ class Urlshortner extends REST_Controller {
     public function make_url_short_post() 
     {
         header('Access-Control-Allow-Origin: *');
+        $base_url = 'Enter your base URL here';
         $actual_url = $this->post('actualUrl');
         $digits = 4;
         $random_code = rand(pow(10, $digits-1), pow(10, $digits)-1);
@@ -27,7 +28,7 @@ class Urlshortner extends REST_Controller {
         }
     	
         if ($url_shortened) {
-            $short_url = 'https://gdsk.in/'.$random_code;
+            $short_url = $base_url.$random_code;
             $result = array(
                 'status' => 'success', 
                 'short_url' => $short_url
