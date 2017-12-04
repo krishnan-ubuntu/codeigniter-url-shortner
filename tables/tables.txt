@@ -2,7 +2,6 @@
 # All the tables
 # ==================================================
 
-
 create table url_index (
 id INT NOT NULL AUTO_INCREMENT,
 actual_url text NOT NULL,
