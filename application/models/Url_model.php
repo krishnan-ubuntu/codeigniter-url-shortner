@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * @author Krishnan ks@geedesk.com
+ * @author Krishnan krishnan.ubuntu@gmail.com
  *
  * @license 
  * 
